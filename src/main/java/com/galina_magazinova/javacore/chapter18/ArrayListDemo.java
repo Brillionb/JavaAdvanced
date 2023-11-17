@@ -8,7 +8,6 @@ public class ArrayListDemo {
     public static void main(String[] args) {
         // Создать ArrayList
         ArrayList<String> al = new ArrayList<>();
-
         System.out.println("Начальный размер al: " + al.size());
 
         //Добавить элементы
@@ -19,7 +18,6 @@ public class ArrayListDemo {
         al.add("D");
         al.add("F");
         al.add(1, "A2");
-
         System.out.println("Размер al после добавления элементов: " + al.size());
 
         //Отобразить ArrayList
