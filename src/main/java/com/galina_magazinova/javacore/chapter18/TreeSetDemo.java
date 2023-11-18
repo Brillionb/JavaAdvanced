@@ -1,5 +1,5 @@
 package main.java.com.galina_magazinova.javacore.chapter18;
-//Демонстрация использование TreeSet
+//Демонстрация использования TreeSet
 
 import java.util.*;
 
