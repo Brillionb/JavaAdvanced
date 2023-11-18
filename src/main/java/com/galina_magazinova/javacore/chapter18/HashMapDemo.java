@@ -17,5 +17,18 @@ public class HashMapDemo {
 
         // получить набор элементов
         Set<Map.Entry<String, Double>> set = hm.entrySet();
+
+        // отобразить содержимое HashMap
+        for (Map.Entry<String, Double> me : set) {
+            System.out.print(me.getKey() + ": ");
+            System.out.println(me.getValue());
+        }
+        System.out.println();
+
+        // пополнить счет клиента John Doe на 1000
+        double balance = hm.get("John Doe");
+        hm.put("John Doe", balance + 1000);
+
+        System.out.println("Новый баланс клиента John Doe: " + hm.get("John Doe"));
     }
 }
