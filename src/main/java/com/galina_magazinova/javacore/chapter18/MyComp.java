@@ -15,6 +15,7 @@ class CompDemo {
     public static void main(String[] args) {
         // создать TreeSet.
         TreeSet<String> ts = new TreeSet<String>(new MyComp());
+
         // добавить элементы в TreeSet.
         ts.add("C");
         ts.add("A");
