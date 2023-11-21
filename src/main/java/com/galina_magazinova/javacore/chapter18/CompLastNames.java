@@ -4,7 +4,7 @@ package main.java.com.galina_magazinova.javacore.chapter18;
 
 import java.util.*;
 
-// компаратор, которы сравнивает фамилии
+// компаратор, который сравнивает фамилии
 public class CompLastNames implements Comparator<String> {
     public int compare(String aStr, String bStr) {
         int i, j;
