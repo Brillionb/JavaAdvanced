@@ -22,23 +22,23 @@ public class module1_2_task1 {
         int requiredSum = 23;
 
         int[] indices = findIndicesSum(array, requiredSum);
-        System.out.println("[" + indices[0] + ", " + indices[1]+"]");
+        System.out.println("[" + indices[0] + ", " + indices[1] + "]");
     }
 
-    public static int[] findIndicesSum(int[] array, int requiredSum){
-          int[] result = new int[2];
-               HashMap<Integer, Integer> hm = new HashMap<>();
+    public static int[] findIndicesSum(int[] array, int requiredSum) {
+        int[] result = new int[2];
+        HashMap<Integer, Integer> hm = new HashMap<>();
 
-        for(int i=0; i <array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             hm.put(array[i], i);
         }
 
-        for (int i=0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             int value = requiredSum - array[i];
 
-            if(hm.containsKey(value)){
-               result[0] = hm.get(value);
-               result[1] = i;
+            if (hm.containsKey(value)) {
+                result[0] = hm.get(value);
+                result[1] = i;
             }
         }
 
