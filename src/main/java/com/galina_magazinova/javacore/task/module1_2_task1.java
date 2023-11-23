@@ -1,4 +1,4 @@
-package main.java.com.galina_magazinova.javacore.task;
+package com.galina_magazinova.javacore.task;
 
 import java.util.HashMap;
 
