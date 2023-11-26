@@ -1,4 +1,4 @@
-package main.java.com.galina_magazinova.javacore.chapter18;
+package com.galina_magazinova.javacore.chapter18Collections;
 // использование специального компаратора
 
 import java.util.*;
