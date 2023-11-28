@@ -1,6 +1,7 @@
 package com.galina_magazinova.javacore.task;
 
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Дан массив целых чисел.
@@ -29,7 +30,7 @@ public class module1_2_task2 {
     }
 
     public static boolean hasDuplicates(int[] array) {
-        HashSet<Integer> hs = new HashSet<>();
+        Set<Integer> hs = new HashSet<>();
 
         for (int element : array) {
             if (!hs.add(element)) {

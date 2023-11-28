@@ -1,6 +1,7 @@
 package com.galina_magazinova.javacore.task;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Дан массив целых чисел. Необходимо реализовать метод, который возвращает индексы элементов массива, значения
@@ -18,30 +19,26 @@ import java.util.HashMap;
 
 public class module1_2_task1 {
     public static void main(String[] args) {
-        int[] array = new int[]{3, 8, 15, 17};
-        int requiredSum = 23;
+        int[] array = new int[]{3, 5, 4};
+        int requiredSum = 7;
 
         int[] indices = findIndicesSum(array, requiredSum);
         System.out.println("[" + indices[0] + ", " + indices[1] + "]");
     }
 
     public static int[] findIndicesSum(int[] array, int requiredSum) {
-        int[] result = new int[2];
-        HashMap<Integer, Integer> hm = new HashMap<>();
-
-        for (int i = 0; i < array.length; i++) {
-            hm.put(array[i], i);
-        }
+        Map<Integer, Integer> arrayValueIndexMap = new HashMap<>();
 
         for (int i = 0; i < array.length; i++) {
             int value = requiredSum - array[i];
 
-            if (hm.containsKey(value)) {
-                result[0] = hm.get(value);
-                result[1] = i;
+            if (arrayValueIndexMap.containsKey(value)) {
+                return new int[]{arrayValueIndexMap.get(value), i};
             }
+
+            arrayValueIndexMap.put(array[i], i);
         }
 
-        return result;
+        return null;
     }
 }
