@@ -4,11 +4,11 @@ import java.io.*;
 
 public class BRRead {
     public static void main(String[] args) throws IOException {
-       char c;
+        char c;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in, System.console().charset()));
         System.out.println("Введите символы, для выхода введите q");
 
-        do{
+        do {
             c = (char) br.read();
             System.out.println(c);
         } while (c != 'q');
